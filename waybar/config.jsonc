@@ -1,0 +1,81 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 13,
+  "modules-left": ["clock", "wlr/taskbar"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["group/hardware", "pulseaudio"],
+
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 20,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "app_ids-mapping": {
+      "firefoxdeveloperedition": "firefox-developer-edition"
+    },
+    "rewrite": {
+        "Firefox Web Browser": "Firefox",
+        "Foot Server": "Terminal"
+    }
+},
+  "clock": {
+    "format": "  {:%I:%M %p}",
+    "format-alt": "󰥔   {:%a, %d. %b  %I:%M %p}"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-bluetooth": "󰂱  {volume}%",
+    "format-muted": "󰖁",
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": " ",
+      "headset": "�",
+      "phone": " ",
+      "portable": " ",
+      "car": "",
+      "default": ["󰖀", "󰕾"]
+    }
+  },
+
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [
+      "disk",
+      "cpu",
+      "memory"
+    ]
+  },
+
+  "disk": {
+    "format": " {percentage_used}% / ",
+    "path": "/",
+    "interval": 5
+  },
+
+  "cpu": {
+    "format": " {usage}% / ",
+    "tooltip": true,
+    "interval": 2
+  },
+
+  "memory": {
+    "format": " {}%",
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "󰀨",
+      "active": "",
+      "default": ""
+    },
+    "sort-by-number": true
+  }
+}

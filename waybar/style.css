@@ -1,0 +1,60 @@
+@import url("/home/luan/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: 'Radio Canada Big', sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @background;
+    opacity: 0.8;
+}
+
+#workspaces button.active {
+    color: @foreground;
+}
+
+#workspaces {
+    background-color: @background;
+    padding: 0 5.6px 0 0;
+}
+
+.modules-left {
+    margin-left: 12px;
+}
+
+.modules-right {
+    margin-right: 12px;
+}
+
+#pulseaudio {
+    color: @foreground; /* color5 */
+    background-color: @background; /* background */
+    margin: 0 15px 0 0px;
+    padding: 0 10px 0 10px; /* top, right, bottom, left */
+}
+
+
+#clock {
+    color: @foreground; /* color3 */
+    background-color: @background; /* background */
+    margin: 0 15px 0 0;
+    padding: 0 10px 0 10px;
+}
+
+
+#hardware {
+    color: @foreground; /* color3 */
+    background-color: @background; /* background */
+    margin: 0 15px 0 0;
+    padding: 0 10px 0 10px;
+}
+
+#taskbar {
+    color: @foreground; /* color3 */
+    background-color: @background; /* background */
+    margin: 0 15px 0 0;
+    padding: 0 10px 0 10px;
+}
